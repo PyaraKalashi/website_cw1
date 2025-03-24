@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color: #08204F;
+
+}
+.topics img{
+    width:200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.topics h1{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 130px;
+    margin-top: -160px;
+    margin-bottom: 50px;
+}
+h3{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 65px;
+    margin-top: -16px;
+    margin-bottom: 50px;
+
+}
+/* line styling*/
+.before{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block; 
+
+}
+.My-Details h1 {
+    color: #dfeaff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.Content h3{
+    color: #61a3c6;
+}
+.Text-1{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    padding-top: 25px;
+}
+.Text-1::after {
+    content:'' ;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;  
+}
+/* text editor styling */
+.bottom{
+    padding: 0;
+    margin:0;
+    width: 280px;
+    height: 65px;
+    margin: 100px auto;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    top: 50%;
+    font-family: sans-serif;
+    transform:translateY(-100%);
+}
+.About{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+   
+}
+a{
+    color:antiquewhite;
+    background-color: #03143c;
+    padding:8px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    
+}
+a:hover{
+    color:#03143c;
+    background-color: antiquewhite;
+}
+.top{
+    text-align: center;
+    margin-top: -230px;
+    font-size: 20px;
+    transform: translateY(2000%);
+}
+.Mine{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px; 
+}
+.My-Details{
+    width: 100%;
+    margin-top: -500px;
+}
+
+.My-Details .Topics {
+    font-size: 28px;
+    transform: translateY(350%);
+}
+.My-Details .Content h3{
+    margin-top: 10px;
+    font-size: 20px;
+    transform: translateY(355%);
+}
+
+.My-Details .links {
+    font-size: 18px;
+    transform: translateY(1120%);
+}
+
+.all_content{
+    margin-top: 50px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="Student_2_FeedBack_Style.css"/>
+        <title>Feedback System</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <img src="./aquavoyage-high-resolution-logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="./checkout.html">Shop</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="./Student_2_FeedBack.html" class="active">Feedback</a></li>
+                <li><a href="#">UserProfile</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </nav>
+        <!-- end of the navigation-->
+
+        <!-- Staring the feedback -->
+    
+    
+        <form class="feedback" method="post">
+            <h1>Please give us your valueable feedback.</h1>
+            <p class="sub">It's very important to us.</p>
+            <div class="information-field">
+                
+                <div class="Name">
+                    <label for="Name">
+                        <input type="text" placeholder=" " class="Name" required>
+                        <span>Name</span>
+                    </label>
+                </div>
+                <div class="email">
+                    <label for="Gmail">
+                        <input type="email" placeholder=" "  class="Gmail" required>
+                        <span>Email Address </span>
+                    </label>
+                </div>
+            </div>
+            <p class="Question-1">Was this your first time visiting?</p>
+            <div class="radio-btns">
+                <div class="one-btn">
+                    <input type="radio" name="one" id="Yes"/>
+                    <label for="Yes">Yes</label>
+                </div>
+                <div class="one-btn">
+                    <input type="radio" name="one" id="No"/>
+                    <label for="No">No</label>
+                </div>
+            </div>
+            <p class="Question-2">Was this website informative and easy to navigate through ?</p>
+            <div class="radio-btns">
+                <div class="one-btn">
+                    <input type="radio" name="two" id="Yes"/>
+                    <label for="Yes">Yes</label>
+                </div>
+                <div class="one-btn">
+                    <input type="radio" name="two" id="No"/>
+                    <label for="No">No</label>
+                </div>
+            </div>
+            <p class="Question-3">What are your thoughts ?</p>
+            <textarea id="textarea1" cols="50" rows="10"></textarea>
+            <div class="emoji">
+                <button class="btn-normal">&#128578;</button>
+                <button class="btn-normal">&#128515;</button>
+                <button class="btn-normal">&#128519;</button>
+                <button class="btn-normal">&#128531;</button>
+                <button class="btn-normal">&#128532;</button>
+                <button class="btn-normal">&#128545;</button>
+            </div>
+            <p class="Question-4">Would you recommend our services ?</p>
+            <div class="radio-btns">
+                <div class="one-btn">
+                    <input type="radio" name="three" id="Yes"/>
+                    <label for="Yes">Yes</label>
+                </div>
+                <div class="one-btn">
+                    <input type="radio" name="three" id="No"/>
+                    <label for="No">No</label>
+                </div>
+            </div><p class="Question-5">Would you like to receive updates about the website and any offers ?</p>
+            <div class="radio-btns">
+                <div class="one-btn">
+                    <input type="radio" name="four" id="Yes"/>
+                    <label for="Yes">Yes</label>
+                </div>
+                <div class="one-btn">
+                    <input type="radio" name="four" id="No"/>
+                    <label for="No">No</label>
+                </div>
+            </div>
+            <p class="Question-6">Do you have any additional questions or requests ?</p>
+            <textarea id="textarea2" cols="50" rows="10" required></textarea>
+            <div class="Accepting">
+                <input type = "checkbox" id="Accepting" required/>
+                <label>I accept all the <a href="#">terms and conditions</a></label>
+            </div>
+            <div class ="button_Container">
+                <button class="btn button" onclick="showPreview(event)" id="previewbtn">Preview the Feedback</button>
+                <div id="preview" style="display: none ;border: 1px solid #040404 ;padding: 1rem; text-align: left;line-height: 50px;margin-bottom: 1rem; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(0, 0, 0); "></div>
+                <button type="submit" class="btn button">Send</button>
+            </div>
+        </form>
+        
+    <script src="./Student_2_FeedBack_javaScript.js"></script>
+    </body>
+</html>
